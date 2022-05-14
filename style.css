@@ -1,6 +1,8 @@
-.table1{
-    border: solid;
-    border: 2px dotted;
-    border: outset #000000
-    
-}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(73, 73, 73);
+  }
+
+  td {
+    text-align: center;
+  }
