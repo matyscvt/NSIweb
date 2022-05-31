@@ -59,8 +59,18 @@
                 <option value="paul">Paul</option>
             </select>
         </div>
-
-        <div id="ans"></div>
+        
+        <div>        
+            <form action="recolte_donnees.php" method="post">
+                <h3>Fruits préférés :</h3>
+                <input type="checkbox" name="fruits[]" id="">abricot<br>
+                <input type="checkbox" name="fruits[]" id="">banane<br>
+                <input type="checkbox" name="fruits[]" id="">pomme<br>
+                <input type="checkbox" name="fruits[]" id="">poire<br>
+            </form>
+        <input type="submit" value="valider">
+        </div>
+    
         <script src="script.js"></script>
     </body>
 </html>
