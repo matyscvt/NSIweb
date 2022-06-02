@@ -51,25 +51,43 @@
             </table>
 
         </div>
+        
+        <br>
 
         <div>
-        <br><label for="name">Choisi un prénom :</label>
-            <select name="prenom" id="name">
-                <option value="" selected>--Fait ton choix--</option>
-                <option value="pierre">Pierre</option>
-                <option value="paul">Paul</option>
-            </select>
-        </div>
-        
-        <div>        
-            <form action="recolte_donnees.php" method="post">
-                <h3>Fruits préférés :</h3>
-                <input type="checkbox" name="fruits[]" id="">abricot<br>
-                <input type="checkbox" name="fruits[]" id="">banane<br>
-                <input type="checkbox" name="fruits[]" id="">pomme<br>
-                <input type="checkbox" name="fruits[]" id="">poire<br>
-            </form>
-        <input type="submit" value="valider">
+		<form>
+		<fieldset>
+            <div id='prenomd'>
+                <label for="name">Choisi un prénom :</label>
+                <select name="prenom" id="name">
+                    <option value="" selected>--Fait ton choix--</option>
+                    <option value="pierre">Pierre</option>
+                    <option value="paul">Paul</option>
+                </select>
+            </div>
+            
+            <div>   
+			     <legend>Séléctionne tes fruits préférés<legend>
+                    <div id='abricotd'>
+                        <input type="checkbox" id='abricot' name="fruits[]" value='abricot'>
+                        <label for='abricot'>Abricot</label>
+                    </div>
+                    <div id='bananed'>
+                        <input type="checkbox" id='banane' name="fruits[]" value='banane'>
+                        <label for='banane'>Banane</label>
+                    </div>
+                    <div id='pommed'>
+                        <input type="checkbox" id='pomme' name="fruits[]" value='pomme' >
+                        <label for='pomme'>Pomme</label>
+                     </div>
+                    <div id='poired'>
+                        <input type="checkbox" id='poire' name="fruits[]" value='poire'>
+                        <label for='poire'>Poire</label>
+                    </div>
+				    <button type="submit" id='formsub'>Envoyer vos réponses</button>
+            </div>
+        </fieldset>
+        </form>
         </div>
     
         <script src="script.js"></script>
